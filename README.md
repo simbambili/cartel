@@ -1,0 +1,2 @@
+# cartel
+Cartel News App
