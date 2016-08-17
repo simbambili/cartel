@@ -8,10 +8,12 @@
 
 /* Begin PBXBuildFile section */
 		E1DF8A9C1D5D567600A213C0 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1DF8A9B1D5D567600A213C0 /* AppDelegate.swift */; };
-		E1DF8A9E1D5D567600A213C0 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1DF8A9D1D5D567600A213C0 /* ViewController.swift */; };
+		E1DF8A9E1D5D567600A213C0 /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1DF8A9D1D5D567600A213C0 /* MainViewController.swift */; };
 		E1DF8AA11D5D567600A213C0 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E1DF8A9F1D5D567600A213C0 /* Main.storyboard */; };
 		E1DF8AA31D5D567600A213C0 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E1DF8AA21D5D567600A213C0 /* Assets.xcassets */; };
 		E1DF8AA61D5D567600A213C0 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E1DF8AA41D5D567600A213C0 /* LaunchScreen.storyboard */; };
+		F080D8D81D63ED6300CB50E3 /* StreamViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F080D8D71D63ED6300CB50E3 /* StreamViewController.swift */; };
+		F080D8DB1D63ED9600CB50E3 /* StreamCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = F080D8DA1D63ED9600CB50E3 /* StreamCell.swift */; };
 		FEF246E7B1463EA0926E8B6F /* Pods_Cartel.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2DF81B5295494997C99C236B /* Pods_Cartel.framework */; };
 /* End PBXBuildFile section */
 
@@ -21,11 +23,13 @@
 		ADB2CDBEA2A8A35AEC4FA9A1 /* Pods-Cartel.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Cartel.release.xcconfig"; path = "Pods/Target Support Files/Pods-Cartel/Pods-Cartel.release.xcconfig"; sourceTree = "<group>"; };
 		E1DF8A981D5D567600A213C0 /* Cartel.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Cartel.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		E1DF8A9B1D5D567600A213C0 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		E1DF8A9D1D5D567600A213C0 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		E1DF8A9D1D5D567600A213C0 /* MainViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
 		E1DF8AA01D5D567600A213C0 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		E1DF8AA21D5D567600A213C0 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		E1DF8AA51D5D567600A213C0 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		E1DF8AA71D5D567600A213C0 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		F080D8D71D63ED6300CB50E3 /* StreamViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StreamViewController.swift; sourceTree = "<group>"; };
+		F080D8DA1D63ED9600CB50E3 /* StreamCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StreamCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -78,12 +82,12 @@
 		E1DF8A9A1D5D567600A213C0 /* Cartel */ = {
 			isa = PBXGroup;
 			children = (
+				F080D8D91D63ED7200CB50E3 /* ViewCells */,
 				E1DF8AB01D5D56B100A213C0 /* Views */,
 				E1DF8AAF1D5D56AA00A213C0 /* API */,
 				E1DF8AAE1D5D56A500A213C0 /* Models */,
 				E1DF8AAD1D5D569E00A213C0 /* ViewControllers */,
 				E1DF8A9B1D5D567600A213C0 /* AppDelegate.swift */,
-				E1DF8A9D1D5D567600A213C0 /* ViewController.swift */,
 				E1DF8A9F1D5D567600A213C0 /* Main.storyboard */,
 				E1DF8AA21D5D567600A213C0 /* Assets.xcassets */,
 				E1DF8AA41D5D567600A213C0 /* LaunchScreen.storyboard */,
@@ -95,6 +99,8 @@
 		E1DF8AAD1D5D569E00A213C0 /* ViewControllers */ = {
 			isa = PBXGroup;
 			children = (
+				E1DF8A9D1D5D567600A213C0 /* MainViewController.swift */,
+				F080D8D71D63ED6300CB50E3 /* StreamViewController.swift */,
 			);
 			name = ViewControllers;
 			sourceTree = "<group>";
@@ -118,6 +124,14 @@
 			children = (
 			);
 			name = Views;
+			sourceTree = "<group>";
+		};
+		F080D8D91D63ED7200CB50E3 /* ViewCells */ = {
+			isa = PBXGroup;
+			children = (
+				F080D8DA1D63ED9600CB50E3 /* StreamCell.swift */,
+			);
+			name = ViewCells;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -242,8 +256,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				E1DF8A9E1D5D567600A213C0 /* ViewController.swift in Sources */,
+				E1DF8A9E1D5D567600A213C0 /* MainViewController.swift in Sources */,
 				E1DF8A9C1D5D567600A213C0 /* AppDelegate.swift in Sources */,
+				F080D8D81D63ED6300CB50E3 /* StreamViewController.swift in Sources */,
+				F080D8DB1D63ED9600CB50E3 /* StreamCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

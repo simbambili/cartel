@@ -17,17 +17,66 @@ PODS:
   - ARSLineProgress (1.2.1)
   - BDBOAuth1Manager (2.0.0):
     - AFNetworking/NSURLSession (~> 3.0.0)
+  - Bolts (1.8.4):
+    - Bolts/AppLinks (= 1.8.4)
+    - Bolts/Tasks (= 1.8.4)
+  - Bolts/AppLinks (1.8.4):
+    - Bolts/Tasks
+  - Bolts/Tasks (1.8.4)
+  - FacebookCore (0.1.1):
+    - Bolts (~> 1.8)
+    - FBSDKCoreKit (~> 4.14)
+  - FacebookLogin (0.1.1):
+    - Bolts (~> 1.8)
+    - FacebookCore
+    - FBSDKCoreKit (~> 4.14)
+    - FBSDKLoginKit (~> 4.14)
+  - FBSDKCoreKit (4.14.0):
+    - Bolts (~> 1.7)
+  - FBSDKLoginKit (4.14.0):
+    - FBSDKCoreKit
+  - Ji (1.2.0):
+    - Ji/Ji (= 1.2.0)
+  - Ji/Ji (1.2.0):
+    - Ji/Ji-libxml
+  - Ji/Ji-libxml (1.2.0)
+  - MutableDataScanner (1.0.7)
+  - OAuthSwift (0.5.2)
+  - ReadabilityKit (0.4.1):
+    - Ji (~> 1.2.0)
+  - reddift (1.6.0):
+    - reddift/KeychainAccess (= 1.6.0)
+  - reddift/KeychainAccess (1.6.0)
+  - TwitterAPI (0.1.0):
+    - MutableDataScanner
+    - OAuthSwift
 
 DEPENDENCIES:
-  - AFNetworking (= 3.0.0)
+  - AFNetworking
   - ARSLineProgress
-  - BDBOAuth1Manager (= 2.0.0)
+  - BDBOAuth1Manager
+  - FacebookCore
+  - FacebookLogin
+  - ReadabilityKit
+  - reddift
+  - TwitterAPI
 
 SPEC CHECKSUMS:
   AFNetworking: 932ff751f9d6fb1dad0b3af58b7e3ffba0a4e7fd
   ARSLineProgress: 6761482b13a0b0b8723fe25e0117cdc543f46ff8
   BDBOAuth1Manager: 92d17d06f8a648602962304cd2f35ae7394fa001
+  Bolts: 8a7995239dbe724f9cba2248b766d48b7ebdd322
+  FacebookCore: 14f27add6888c27470d42a100374e6361f4e0f79
+  FacebookLogin: 748f4e621e874da3e0bf63bccf6fd1542c786a1b
+  FBSDKCoreKit: 6e020b5db0b5bd1e01f5fb0902131befd129a502
+  FBSDKLoginKit: da563567a108050ef83739c8c8c001ee9e25fa13
+  Ji: ddebb22f9ac445db6e884b66f78ea74fb135fdb7
+  MutableDataScanner: bba5d238d7191f0e567c695f833c5d6cebcc093d
+  OAuthSwift: 1ef042d4362e755e24a78f158d817245641a5d24
+  ReadabilityKit: 68138701d33ab66886259e1e4c863b605cba8222
+  reddift: 40e889cda81a90cc6475baceb966bc266e7684a8
+  TwitterAPI: adc61bdf90fde855e84c1bc67223c5877f22b464
 
-PODFILE CHECKSUM: 1c99d786cf2b984ae07b542867fec5958bf8910b
+PODFILE CHECKSUM: c2e8c15cd75e002e0fb92ea840961422c1a35dc1
 
 COCOAPODS: 1.0.1
