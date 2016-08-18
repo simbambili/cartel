@@ -6,7 +6,21 @@ target 'Cartel' do
   use_frameworks!
 
   # Pods for Twttr
-  pod 'AFNetworking', '3.0.0'
+  pod 'AFNetworking'
   pod 'ARSLineProgress'
-  pod 'BDBOAuth1Manager', '2.0.0'
+  pod 'BDBOAuth1Manager'
+
+  pod 'FacebookCore'
+  pod 'FacebookLogin'
+  # pod 'FacebookShare'
+  
+  pod 'reddift'
+
+  pod 'TwitterAPI'
+ 
+  pod 'ReadabilityKit'
+
+  
+  
+
 end
